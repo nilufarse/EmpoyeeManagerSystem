@@ -14,6 +14,8 @@ namespace WorkMenegerSystem.Meneger
         public static void AddEmployee()
         { 
             Employee employee = new Employee();
+            Random random = new Random();
+            employee.EmployeeNumber = random.Next(1, 100);
             Console.WriteLine("İşçi nömrəsini qeyd edin: ");
             employee.EmployeeNumber = int.Parse(Console.ReadLine());
             Console.WriteLine("İşçinin adını qeyd edin: ");
